@@ -1,0 +1,134 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="TutorialCSS.css">
+    <meta charset="utf-8" />
+    <title>React Tutorial Page </title>
+</head>
+<body>
+    <div class="skew">
+        <div class="content">
+            <h1>React Tutorial</h1>
+            <p>Introduction to React for beginners</p>
+        </div>
+    </div>
+    <br />
+    <br />
+    <h1 id="IntroductionHeader">React Basics</h1>
+    <p id="ReactIntro">
+        <span style="font-size:30px;font-weight:bold;"><i>What is React?</i></span><br /><br />
+        <strong> React </strong> is a JavaScript library used in web development to build interactive elements on websites. React specializes in helping developers build user interfaces, or UIs. In terms of websites and web applications, UIs are the collection of on-screen menus, search bars, buttons, and anything else someone interacts with to USE a website or app.<br /><br />
+        <span style="font-size:15px;font-weight:bold;"> History</span><br /><br />
+        React was developed by Facebook in 2011 and given open-source status in 2013 under the controversial BSD3 license. Since its first release, React’s Github repository has generated 96,000 stars from developers and has amassed a community of almost 1200 active contributors, regularly pushing updates to enrich the library. With over 7M downloads in the month of May alone, this library has definitely proven its preference within technology companies.<br /><br />
+        <span style="font-size:15px;font-weight:bold;">Importance</span><br /><br />
+        Before React JS, developers were stuck building UIs by hand with “vanilla JavaScript” or with less UI-focused React predecessors like jQuery. That meant longer development times and plenty of opportunities for errors and bugs. So, in 2011, Facebook engineer Jordan Walke created React JS specifically to improve UI development. One of the most important aspects of React is the fact that you can create components, which are like custom, reusable HTML elements, to quickly and efficiently build user interfaces. React also streamlines how data is stored and handled, using state and props.
+
+        In addition to providing reusable React library code (saving development time and cutting down on the chance for coding errors), React comes with two key features that add to its appeal for JavaScript developers:<br /><br />
+        <span>&#8226;</span><strong>JSX</strong><br />
+        <span>&#8226;</span><strong>Virtual DOM</strong><br /><br />
+        <span style="font-size:15px;font-weight:bold;"> Understanding JSX and Virtual DOM</span><br /><br />
+        <strong>JSX</strong> is a syntax extension of JavaScript used to create DOM elements which are rendered in the React DOM. Before JSX can render in a web browser it must first be compiled into regular JavaScript. JSX performs optimizations while translating to regular JavaScript making it faster than normal JavaScript. However using, JSX to update a DOM leads to significant site performance improvements and development efficiency. How? It’s all about the next React feature, the Virtual DOM.<br /><br />
+
+        <strong>The Virtual DOM </strong>is a copy of the site’s DOM, and React JS uses this copy to see what parts of the actual DOM need to change when an event happens. Let’s say a user enters a comment in a blog post form and pushes the “Comment” button. Without using React JS, the entire DOM would have to update to reflect this change (using the time and processing power it takes to make this update). React, on the other hand, scans the Virtual DOM to see what changed after a user action (in this case, a comment being added) and selectively updates that section of the DOM only.<br /><br />
+
+        <span style="font-size:30px;font-weight:bold;"><i>How does is work?</i></span><br /><br />
+        React implements a virtual DOM that is basically a DOM tree representation in Javascript. So when it needs to read or write to the DOM, it will use the virtual representation of it. Then the virtual DOM will try to find the most efficient way to update the browser’s DOM.
+
+        Unlike browser DOM elements, React elements are plain objects and are cheap to create. React DOM takes care of updating the DOM to match the React elements. The reason for this is that JavaScript is very fast and it’s worth keeping a DOM tree in it to speedup its manipulation.
+    </p>
+    <span style="font-size:30px;font-weight:bold;margin:300px;"><i>React Perequisites</i></span><br /><br />
+    <p style="margin:300px; position:relative; top:-300px;">
+        There are a few things you should know in advance before you start playing around with React. If you've never used JavaScript or the DOM at all before, for example, I would get more familiar with those before trying to tackle React.
+        Here are what I consider to be React prerequisites:<br /><br />
+        <span>&#8226;</span><strong>Basic familiarity with HTML & CSS</strong><br />
+        <span>&#8226;</span><strong>Basic knowledge of JavaScript and programming</strong><br />
+        <span>&#8226;</span><strong>Basic understanding of the DOM</strong><br />
+        <span>&#8226;</span><strong>Familiarity with ES6 syntax and features</strong>
+    </p>
+    <h1 style="position:relative; top:-500px;" id="IntroductionHeader">Set Up and Installation</h1><br />
+    <p style="margin:300px; position:relative; top:-800px;">To use React in production, you need NPM and Node.js</>
+    <p id="ReactSetUp"></p>
+
+
+
+
+    <div class="snow">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1536" preserveAspectRatio="xMidYMax slice">
+            <g fill="#FFF" fill-opacity=".15" transform="translate(55 42)">
+                <g id="snow-bottom-layer">
+                    <ellipse cx="6" cy="1009.5" rx="6" ry="5.5" />
+                    <ellipse cx="138" cy="1110.5" rx="6" ry="5.5" />
+                    <ellipse cx="398" cy="1055.5" rx="6" ry="5.5" />
+                    <ellipse cx="719" cy="1284.5" rx="6" ry="5.5" />
+                    <ellipse cx="760" cy="1155.5" rx="6" ry="5.5" />
+                    <ellipse cx="635" cy="1459.5" rx="6" ry="5.5" />
+                    <ellipse cx="478" cy="1335.5" rx="6" ry="5.5" />
+                    <ellipse cx="322" cy="1414.5" rx="6" ry="5.5" />
+                    <ellipse cx="247" cy="1234.5" rx="6" ry="5.5" />
+                    <ellipse cx="154" cy="1425.5" rx="6" ry="5.5" />
+                    <ellipse cx="731" cy="773.5" rx="6" ry="5.5" />
+                    <ellipse cx="599" cy="874.5" rx="6" ry="5.5" />
+                    <ellipse cx="339" cy="819.5" rx="6" ry="5.5" />
+                    <ellipse cx="239" cy="1004.5" rx="6" ry="5.5" />
+                    <ellipse cx="113" cy="863.5" rx="6" ry="5.5" />
+                    <ellipse cx="102" cy="1223.5" rx="6" ry="5.5" />
+                    <ellipse cx="395" cy="1155.5" rx="6" ry="5.5" />
+                    <ellipse cx="826" cy="943.5" rx="6" ry="5.5" />
+                    <ellipse cx="626" cy="1054.5" rx="6" ry="5.5" />
+                    <ellipse cx="887" cy="1366.5" rx="6" ry="5.5" />
+                    <ellipse cx="6" cy="241.5" rx="6" ry="5.5" />
+                    <ellipse cx="138" cy="342.5" rx="6" ry="5.5" />
+                    <ellipse cx="398" cy="287.5" rx="6" ry="5.5" />
+                    <ellipse cx="719" cy="516.5" rx="6" ry="5.5" />
+                    <ellipse cx="760" cy="387.5" rx="6" ry="5.5" />
+                    <ellipse cx="635" cy="691.5" rx="6" ry="5.5" />
+                    <ellipse cx="478" cy="567.5" rx="6" ry="5.5" />
+                    <ellipse cx="322" cy="646.5" rx="6" ry="5.5" />
+                    <ellipse cx="247" cy="466.5" rx="6" ry="5.5" />
+                    <ellipse cx="154" cy="657.5" rx="6" ry="5.5" />
+                    <ellipse cx="731" cy="5.5" rx="6" ry="5.5" />
+                    <ellipse cx="599" cy="106.5" rx="6" ry="5.5" />
+                    <ellipse cx="339" cy="51.5" rx="6" ry="5.5" />
+                    <ellipse cx="239" cy="236.5" rx="6" ry="5.5" />
+                    <ellipse cx="113" cy="95.5" rx="6" ry="5.5" />
+                    <ellipse cx="102" cy="455.5" rx="6" ry="5.5" />
+                    <ellipse cx="395" cy="387.5" rx="6" ry="5.5" />
+                    <ellipse cx="826" cy="175.5" rx="6" ry="5.5" />
+                    <ellipse cx="626" cy="286.5" rx="6" ry="5.5" />
+                    <ellipse cx="887" cy="598.5" rx="6" ry="5.5" />
+                </g>
+            </g>
+            <g fill="#FFF" fill-opacity=".3" transform="translate(65 63)">
+                <g id="snow-top-layer">
+                    <circle cx="8" cy="776" r="8" />
+                    <circle cx="189" cy="925" r="8" />
+                    <circle cx="548" cy="844" r="8" />
+                    <circle cx="685" cy="1115" r="8" />
+                    <circle cx="858" cy="909" r="8" />
+                    <circle cx="874" cy="1438" r="8" transform="rotate(180 874 1438)" />
+                    <circle cx="657" cy="1256" r="8" transform="rotate(180 657 1256)" />
+                    <circle cx="443" cy="1372" r="8" transform="rotate(180 443 1372)" />
+                    <circle cx="339" cy="1107" r="8" transform="rotate(180 339 1107)" />
+                    <circle cx="24" cy="1305" r="8" transform="rotate(180 24 1305)" />
+                    <circle cx="8" cy="8" r="8" />
+                    <circle cx="189" cy="157" r="8" />
+                    <circle cx="548" cy="76" r="8" />
+                    <circle cx="685" cy="347" r="8" />
+                    <circle cx="858" cy="141" r="8" />
+                    <circle cx="874" cy="670" r="8" transform="rotate(180 874 670)" />
+                    <circle cx="657" cy="488" r="8" transform="rotate(180 657 488)" />
+                    <circle cx="443" cy="604" r="8" transform="rotate(180 443 604)" />
+                    <circle cx="339" cy="339" r="8" transform="rotate(180 339 339)" />
+                    <circle cx="24" cy="537" r="8" transform="rotate(180 24 537)" />
+                </g>
+            </g>
+        </svg>
+    </div>
+
+
+
+
+</body>
+</html>
