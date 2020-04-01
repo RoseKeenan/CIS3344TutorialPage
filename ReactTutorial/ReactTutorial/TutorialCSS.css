@@ -109,3 +109,8 @@ span {
 #ReactIntro ul {
     font-family: 'Nunito', sans-serif;
 }
+#ReactBrowser{
+    width:50%;
+    height:50%;
+    margin-left:25%;
+}

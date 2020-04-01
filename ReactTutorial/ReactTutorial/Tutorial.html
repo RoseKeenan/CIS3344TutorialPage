@@ -48,13 +48,42 @@
         <span>&#8226;</span><strong>Familiarity with ES6 syntax and features</strong>
     </p>
     <h1 style="position:relative; top:-500px;" id="IntroductionHeader">Set Up and Installation</h1><br />
-    <p style="margin:300px; position:relative; top:-800px;">To use React in production, you need NPM and <a href="https://nodejs.org/en/">Node.js</a></p>
+    <p style="margin:300px; position:relative; top:-800px;">To use React in production, you need NPM and <a href="https://nodejs.org/en/">Node.js</a><br /><br />
+    <strong>Npm</strong> is the package manager for the Node JavaScript platform. It puts modules in place so that node can find them, and manages dependency conflicts intelligently. It is extremely configurable to support a wide variety of use cases. Most commonly, it is used to publish, discover, install, and develop node programs<br /><br />
     <p id="ReactSetUp">
-        If you have NPM and Node.js installed, you can create a React application by first installing the create-react-app.
-        Install create-react-app by running this command in your terminal:
+        After successfully installing NodeJS, we can start installing React upon it using npm.<br />
+        <u>Step 1. Create the Root Folder</u><br /><br>
+        Create a folder with name reactApp on the desktop to install all the required files, using the mkdir command:<br />
+        <strong>
+            C:\Users\username\source\repos>mkdir reactApp<br />
+            C:\Users\username\source\repos>cd reactApp
+        </strong><br /><br />
+        To create any module, it is required to generate the package.json file. Therefore, after Creating the folder, we need to create a package.json file.
+        To do so you need to run the npm init command from the command prompt: <br />
+        <strong>C:\Users\username\source\repos\reactApp>npm init -y</strong><br /><br />
+        <u>Step 2. Install React and react dom</u><br /><br>
+        Install create-react-app by running this command in your terminal:<br />
+        <strong>C:\Users\username\source\repos>npm install -g create-react-app</strong><br /><br />
+        You are now ready to create your first React application! <br /><br />
+        Run this command to create a React application named  myFirstReactApp:<br />
+        <strong>C:\Users\username\source\repos>npx create-react-app myFirstReactApp</strong><br /><br />
+        <u>Step 3. Run the React Application</u><br /><br>
+        Run this command to move to the myfirstreact directory:<br />
+        <strong>C:\Users\username\source\repos>cd myFirstReactApp</strong><br /><br />
+        Run this command to execute the React application myFirstReactApp :<br />
+        <strong>C:\Users\username\source\repos\myFirstReactApp>npm start</strong><br /><br />
+        A new browser window will pop up with your newly created React App! If not, open your browser and type localhost:3000 in the address bar.
+
+        The result:<br /><br />
+        <img id="ReactBrowser" src="Images/reactBrowser.JPG" alt="Italian Trulli"><br />
+        <u>Step 4. Install Bootstrap</u><br /><br>
+        Bootstrap is a framework to help you design websites faster and easier. It includes HTML and CSS based design templates for typography, forms, buttons, tables, navigation, modals, image carousels, etc. We will use Bootstrap to style our reat app.<br /><br />
+        Run this command to install Bootstrap and import into your index.js file:<br />
+        <strong>C:\Users\username\source\repos>npm i Bootstrap</strong><br />
+        <strong>C:\Users\username\source\repos>import Bootstrap\dist\css\bootstrap.css</strong><br /><br />
     </p>
-    
-    
+
+
 
 
 
