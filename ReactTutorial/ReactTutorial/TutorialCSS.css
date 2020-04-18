@@ -1,4 +1,6 @@
 ﻿@import url('https://fonts.googleapis.com/css?family=Corben:700');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&display=swap');
+
 /*Snow animation*/
 .hero {
     background-image: radial-gradient(50% 176%, #253854 80%, #061922 100%);
@@ -20,11 +22,11 @@
     left: 0;
 }
 
-    .snow .svg {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-    }
+.snow .svg {
+    position: absolute;
+    width: 1%;
+    height: 100%;
+}
 
 #snow-top-layer {
     will-change: transform;
@@ -76,29 +78,38 @@ body {
 /*containers*/
 #ReactIntro {
     position: relative;
-    margin-left: 300px;
-    margin-right: 50px;
-    font-family: 'Nunito', sans-serif;
+    margin-left: 15%;
     border: 2px solid #315b96;
-    padding: 10px;
+    padding: 3%;
     border-radius: 2em 1em 4em / 0.5em 3em;
     background-color: #315b96;
-    width: 1000px;
-    height: 350%;
+    width: 70%;
+    box-sizing: border-box;
 }
 
 #ReactSetUp {
     position: relative;
-    margin-left: 300px;
-    margin-right: 50px;
-    font-family: 'Nunito', sans-serif;
+    margin-left: 15%;
     border: 2px solid #233567;
-    padding: 10px;
+    padding: 3%;
     border-radius: 2em 1em 4em / 0.5em 3em;
     background-color: #233567;
-    width: 1000px;
-    height: 350%;
-    top:-1095px;
+    width: 70%;
+    box-sizing: border-box;
+}
+
+
+#ReactPreReq {
+    position: relative;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 15%;
+    border: 2px solid #344082;
+    padding: 3%;
+    border-radius: 2em 1em 4em / 0.5em 3em;
+    background-color: #344082;
+    width: 70%;
+    box-sizing: border-box;
 }
 
 span {
@@ -113,4 +124,47 @@ span {
     width:50%;
     height:50%;
     margin-left:25%;
+}
+
+.code {
+    font-family: "Source Code Pro", 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:lightblue;
+}
+
+.center-image {
+    margin:5%;
+    width: 20%;
+    margin-left: 40%;
+}
+
+a {
+    color: lightpink;
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+}
+
+.bigger-image {
+    margin: 5%;
+    width: 40%;
+    margin-left: 30%;
+}
+
+h2 {
+    font-style: italic;
+    font-size: 20pt;
+}
+
+footer {
+    background-color: white;
+    color: lightpink;
+    padding: 1%;
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 50%;
+    margin-left: 25%;
+    border-radius: 5px;
 }
