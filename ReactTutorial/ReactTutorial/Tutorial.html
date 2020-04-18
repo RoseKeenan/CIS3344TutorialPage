@@ -17,78 +17,167 @@
     <br />
     <br />
     <h1 id="IntroductionHeader">React Basics</h1>
-    <p id="ReactIntro">
-        <span style="font-size:30px;font-weight:bold;"><i>What is React?</i></span><br /><br />
-        <strong> React </strong> is a JavaScript library used in web development to build interactive elements on websites. React specializes in helping developers build user interfaces, or UIs. In terms of websites and web applications, UIs are the collection of on-screen menus, search bars, buttons, and anything else someone interacts with to USE a website or app.<br /><br />
-        <span style="font-size:15px;font-weight:bold;"> History</span><br /><br />
-        React was developed by Facebook in 2011 and given open-source status in 2013 under the controversial BSD3 license. Since its first release, React’s Github repository has generated 96,000 stars from developers and has amassed a community of almost 1200 active contributors, regularly pushing updates to enrich the library. With over 7M downloads in the month of May alone, this library has definitely proven its preference within technology companies.<br /><br />
-        <span style="font-size:15px;font-weight:bold;">Importance</span><br /><br />
-        Before React JS, developers were stuck building UIs by hand with “vanilla JavaScript” or with less UI-focused React predecessors like jQuery. That meant longer development times and plenty of opportunities for errors and bugs. So, in 2011, Facebook engineer Jordan Walke created React JS specifically to improve UI development. One of the most important aspects of React is the fact that you can create components, which are like custom, reusable HTML elements, to quickly and efficiently build user interfaces. React also streamlines how data is stored and handled, using state and props.
 
-        In addition to providing reusable React library code (saving development time and cutting down on the chance for coding errors), React comes with two key features that add to its appeal for JavaScript developers:<br /><br />
-        <span>&#8226;</span><strong>JSX</strong><br />
-        <span>&#8226;</span><strong>Virtual DOM</strong><br /><br />
-        <span style="font-size:15px;font-weight:bold;"> Understanding JSX and Virtual DOM</span><br /><br />
-        <strong>JSX</strong> is a syntax extension of JavaScript used to create DOM elements which are rendered in the React DOM. Before JSX can render in a web browser it must first be compiled into regular JavaScript. JSX performs optimizations while translating to regular JavaScript making it faster than normal JavaScript. However using, JSX to update a DOM leads to significant site performance improvements and development efficiency. How? It’s all about the next React feature, the Virtual DOM.<br /><br />
+    <div id="ReactIntro">
+        <p>
+            <h2>What is React?</h2>
+            <hr>
+            <strong> React </strong> is a JavaScript library used in web development to build interactive elements on websites. React specializes in helping developers build user interfaces, or UIs. In terms of websites and web applications, UIs are the collection of on-screen menus, search bars, buttons, and anything else someone interacts with to USE a website or app.<br /><br />
+            <h3>History</h3>
+            React was developed by Facebook in 2011 and given open-source status in 2013 under the controversial BSD3 license. Since its first release, React’s Github repository has generated 96,000 stars from developers and has amassed a community of almost 1200 active contributors, regularly pushing updates to enrich the library. With over 7M downloads in the month of May alone, this library has definitely proven its preference within technology companies.<br /><br />
+            <h3>Importance</h3>
+            Before React JS, developers were stuck building UIs by hand with “vanilla JavaScript” or with less UI-focused React predecessors like jQuery. That meant longer development times and plenty of opportunities for errors and bugs. So, in 2011, Facebook engineer Jordan Walke created React JS specifically to improve UI development. One of the most important aspects of React is the fact that you can create components, which are like custom, reusable HTML elements, to quickly and efficiently build user interfaces. React also streamlines how data is stored and handled, using state and props.
 
-        <strong>The Virtual DOM </strong>is a copy of the site’s DOM, and React JS uses this copy to see what parts of the actual DOM need to change when an event happens. Let’s say a user enters a comment in a blog post form and pushes the “Comment” button. Without using React JS, the entire DOM would have to update to reflect this change (using the time and processing power it takes to make this update). React, on the other hand, scans the Virtual DOM to see what changed after a user action (in this case, a comment being added) and selectively updates that section of the DOM only.<br /><br />
+            In addition to providing reusable React library code (saving development time and cutting down on the chance for coding errors), React comes with two key features that add to its appeal for JavaScript developers:
+            <ul>
+                <b>
+                    <li>JSX</li>
+                    <li>Virtual DOM</li>
+                </b>
+            </ul>
+            <h3>Understanding JSX and Virtual DOM</h3>
+            <strong>JSX</strong> is a syntax extension of JavaScript used to create DOM elements which are rendered in the React DOM. Before JSX can render in a web browser it must first be compiled into regular JavaScript. JSX performs optimizations while translating to regular JavaScript making it faster than normal JavaScript. However using, JSX to update a DOM leads to significant site performance improvements and development efficiency. How? It’s all about the next React feature, the Virtual DOM.<br /><br />
 
-        <span style="font-size:30px;font-weight:bold;"><i>How does is work?</i></span><br /><br />
-        React implements a virtual DOM that is basically a DOM tree representation in Javascript. So when it needs to read or write to the DOM, it will use the virtual representation of it. Then the virtual DOM will try to find the most efficient way to update the browser’s DOM.
+            <strong>The Virtual DOM </strong>is a copy of the site’s DOM, and React JS uses this copy to see what parts of the actual DOM need to change when an event happens. Let’s say a user enters a comment in a blog post form and pushes the “Comment” button. Without using React JS, the entire DOM would have to update to reflect this change (using the time and processing power it takes to make this update). React, on the other hand, scans the Virtual DOM to see what changed after a user action (in this case, a comment being added) and selectively updates that section of the DOM only.<br /><br />
 
-        Unlike browser DOM elements, React elements are plain objects and are cheap to create. React DOM takes care of updating the DOM to match the React elements. The reason for this is that JavaScript is very fast and it’s worth keeping a DOM tree in it to speedup its manipulation.
-    </p>
-    <span style="font-size:30px;font-weight:bold;margin:300px;"><i>React Perequisites</i></span><br /><br />
-    <p style="margin:300px; position:relative; top:-300px;">
-        There are a few things you should know in advance before you start playing around with React. If you've never used JavaScript or the DOM at all before, for example, I would get more familiar with those before trying to tackle React.
-        Here are what I consider to be React prerequisites:<br /><br />
-        <span>&#8226;</span><strong>Basic familiarity with HTML & CSS</strong><br />
-        <span>&#8226;</span><strong>Basic knowledge of JavaScript and programming</strong><br />
-        <span>&#8226;</span><strong>Basic understanding of the DOM</strong><br />
-        <span>&#8226;</span><strong>Familiarity with ES6 syntax and features</strong>
-    </p>
-    <h1 style="position:relative; top:-500px;" id="IntroductionHeader">Set Up and Installation</h1><br />
-    <p style="margin:300px; position:relative; top:-800px;">To use React in production, you need NPM and <a href="https://nodejs.org/en/">Node.js</a><br /><br />
-    <strong>Npm</strong> is the package manager for the Node JavaScript platform. It puts modules in place so that node can find them, and manages dependency conflicts intelligently. It is extremely configurable to support a wide variety of use cases. Most commonly, it is used to publish, discover, install, and develop node programs<br /><br />
-    <p id="ReactSetUp">
-        After successfully installing NodeJS, we can start installing React upon it using npm.<br />
-        <u>Step 1. Create the Root Folder</u><br /><br>
-        Create a folder with name reactApp on the desktop to install all the required files, using the mkdir command:<br />
-        <strong>
-            C:\Users\username\source\repos>mkdir reactApp<br />
-            C:\Users\username\source\repos>cd reactApp
-        </strong><br /><br />
-        To create any module, it is required to generate the package.json file. Therefore, after Creating the folder, we need to create a package.json file.
-        To do so you need to run the npm init command from the command prompt: <br />
-        <strong>C:\Users\username\source\repos\reactApp>npm init -y</strong><br /><br />
-        <u>Step 2. Install React and react dom</u><br /><br>
-        Install create-react-app by running this command in your terminal:<br />
-        <strong>C:\Users\username\source\repos>npm install -g create-react-app</strong><br /><br />
-        You are now ready to create your first React application! <br /><br />
-        Run this command to create a React application named  myFirstReactApp:<br />
-        <strong>C:\Users\username\source\repos>npx create-react-app myFirstReactApp</strong><br /><br />
-        <u>Step 3. Run the React Application</u><br /><br>
-        Run this command to move to the myfirstreact directory:<br />
-        <strong>C:\Users\username\source\repos>cd myFirstReactApp</strong><br /><br />
-        Run this command to execute the React application myFirstReactApp :<br />
-        <strong>C:\Users\username\source\repos\myFirstReactApp>npm start</strong><br /><br />
-        A new browser window will pop up with your newly created React App! If not, open your browser and type localhost:3000 in the address bar.
+            <h2>How Does it Work?</h2>
+            <hr />
+            React implements a virtual DOM that is basically a DOM tree representation in Javascript. So when it needs to read or write to the DOM, it will use the virtual representation of it. Then the virtual DOM will try to find the most efficient way to update the browser’s DOM.
 
-        The result:<br /><br />
-        <img id="ReactBrowser" src="Images/reactBrowser.JPG" alt="Italian Trulli"><br />
-        <u>Step 4. Install Bootstrap</u><br /><br>
-        Bootstrap is a framework to help you design websites faster and easier. It includes HTML and CSS based design templates for typography, forms, buttons, tables, navigation, modals, image carousels, etc. We will use Bootstrap to style our reat app.<br /><br />
-        Run this command to install Bootstrap and import into your index.js file:<br />
-        <strong>C:\Users\username\source\repos>npm i Bootstrap</strong><br />
-        <strong>C:\Users\username\source\repos>import Bootstrap\dist\css\bootstrap.css</strong><br /><br />
-    </p>
+            Unlike browser DOM elements, React elements are plain objects and are cheap to create. React DOM takes care of updating the DOM to match the React elements. The reason for this is that JavaScript is very fast and it’s worth keeping a DOM tree in it to speedup its manipulation.
+        </p>
+    </div>
 
+    <div id="ReactPreReq">
+        <h2>React Perequisites</h2>
+        <hr />
+        <p>
+            There are a few things you should know in advance before you start playing around with React. If you've never used JavaScript or the DOM at all before, for example, I would get more familiar with those before trying to tackle React.
+            Here are what I consider to be React prerequisites:<br /><br />
+            <ul>
+                <li>
+                    <strong>Basic familiarity with HTML & CSS</strong>
+                </li>
+                <li>
+                    <strong>Basic knowledge of JavaScript and programming</strong>
+                </li>
+                <li>
+                    <strong>Basic understanding of the DOM</strong>
+                </li>
+                <li>
+                    <strong>Familiarity with ES6 syntax and features</strong>
+                </li>
+            </ul>
+        </p>
+        <br />
+        <h2>Set Up and Installation</h2>
+        <hr />
+        <p>
+            To use React in production, you need NPM and <a href="https://nodejs.org/en/">Node.js</a><br /><br />
+            <strong>Npm</strong> is the package manager for the Node JavaScript platform. It puts modules in place so that node can find them, and manages dependency conflicts intelligently. It is extremely configurable to support a wide variety of use cases. Most commonly, it is used to publish, discover, install, and develop node programs<br /><br />
+        </p>
+    </div>
 
+    <div id="ReactSetUp">
+        <h2>Let's Get Started!</h2>
+        <hr />
+        <p>
+            After successfully installing NodeJS, we can start installing React upon it using npm.<br />
+            <u>Step 1. Create the Root Folder</u><br /><br>
+            Create a folder with name reactApp on the desktop to install all the required files, using the mkdir command:<br />
+            <strong class="code">
+                C:\Users\username\source\repos>mkdir reactApp<br />
+                C:\Users\username\source\repos>cd reactApp
+            </strong><br /><br />
+            To create any module, it is required to generate the package.json file. Therefore, after Creating the folder, we need to create a package.json file.
+            To do so you need to run the npm init command from the command prompt: <br />
+            <strong class="code">C:\Users\username\source\repos\reactApp>npm init -y</strong><br /><br />
+            <u>Step 2. Install React and react dom</u><br /><br>
+            Install create-react-app by running this command in your terminal:<br />
+            <strong class="code">C:\Users\username\source\repos>npm install -g create-react-app</strong><br /><br />
+            You are now ready to create your first React application! <br /><br />
+            Run this command to create a React application named  myFirstReactApp:<br />
+            <strong class="code">C:\Users\username\source\repos>npx create-react-app myFirstReactApp</strong><br /><br />
+            <u>Step 3. Run the React Application</u><br /><br>
+            Run this command to move to the myfirstreact directory:<br />
+            <strong class="code">C:\Users\username\source\repos>cd myFirstReactApp</strong><br /><br />
+            Run this command to execute the React application myFirstReactApp :<br />
+            <strong class="code">C:\Users\username\source\repos\myFirstReactApp>npm start</strong><br /><br />
+            A new browser window will pop up with your newly created React App! If not, open your browser and type localhost:3000 in the address bar.
 
+            The result:<br /><br />
+            <img id="ReactBrowser" src="Images/reactBrowser.JPG" alt="Italian Trulli"><br />
+            <u>Step 4. Install Bootstrap</u><br /><br>
+            Bootstrap is a framework to help you design websites faster and easier. It includes HTML and CSS based design templates for typography, forms, buttons, tables, navigation, modals, image carousels, etc. We will use Bootstrap to style our react app.<br /><br />
+            Run this command to install Bootstrap and import into your index.js file:<br />
+            <strong class="code">C:\Users\username\source\repos>npm i Bootstrap</strong><br />
+            <strong class="code">C:\Users\username\source\repos>import Bootstrap\dist\css\bootstrap.css</strong><br /><br />
+        </p>
 
+        <p>
+            <u>Step 5. Build the App</u><br />
+        </p>
+
+        <p>
+            Now, we are ready to build!
+        </p>
+
+        <p>
+            First, it’s important to understand JavaScript XML, also known as JSX.
+            JSX is a syntax extension to JavaScript. It helps us describe what the User Interface (UI) will look like.
+            With JSX, you can create HTML/XML-like structures within your JavaScript file.
+            When inserting information into the DOM, we do not need to use methods like appendChild() or createElement().
+            JSX converts HTML tags into React elements. You can see more of this in action by clicking <a href="https://www.w3schools.com/react/showreact.asp?filename=demo2_react_jsx1">
+                this example
+            </a>.
+        </p>
+
+        <p>
+            Now that we have some basic knowledge of JSX, let’s start building our application. You have seen what the default React Application looks like.
+            So, let’s look at our setup and see how this is being displayed.
+            <br />
+            <img class="center-image" src="Images/folders.PNG" />
+        </p>
+
+        <p>
+            Under our public folder, we have our logos, favicon, index, and some other files but we don’t have to worry about them for this tutorial.
+            Looking under our src folder, we see our CSS and JavaScript files. The files named App contains the information that displays our default app.
+            We don’t need to worry about those since we’re going to create our own application.
+        </p>
+
+        <p>
+            The files named Index are the CSS and Javascript files for our index page. We will work with the CSS file solely for styling.
+            We want to mention that because we are using the Boostrap library, sometimes you might notice that your styles won’t be showing up.
+            This is because Bootstrap styles are being applied that override your created styles. You will see this later when creating Bootstrap
+            styled buttons but, if you wanted to change the color of a Bootstrap button or any other attribute in a Bootstrap class, then you must put
+            <strong class="code">!important </strong>next to your style. This CSS property means that all previous CSS of that element with that property should be
+            ignored and the important property should be applied.
+
+        </p>
+
+        <p>
+            Moving forward, let’s create a subfolder under the src folder. We will name this “components”. This is where we will organize our JSX files.
+            <br />
+            <img class="center-image" src="Images/components-folder.PNG" />
+        </p>
+
+        <p>
+            Now, let’s create a Welcome page. This is how we styled our welcome page. Feel free to style it however you want by manipulating your index.css file.
+            <br />
+            <img class="bigger-image" src="Images/welcome.PNG" />
+        </p>
+
+        <p>
+            First, we will create a JSX file called “welcome.jsx”. When you create this file, it will be empty. The first thing you want to add are your imports.
+            For now, we will just import React, and a component.
+            <br />
+            <img class="bigger-image" src="Images/welcome-import.PNG" />
+        </p>
+
+    </div>
 
     <div class="snow">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1536" preserveAspectRatio="xMidYMax slice">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 3000" preserveAspectRatio="xMidYMax slice">
             <g fill="#FFF" fill-opacity=".15" transform="translate(55 42)">
                 <g id="snow-bottom-layer">
                     <ellipse cx="6" cy="1009.5" rx="6" ry="5.5" />
@@ -159,9 +248,6 @@
             </g>
         </svg>
     </div>
-
-
-
-
+    <footer>Created by Maryam S. and Rose K.</footer>
 </body>
 </html>
