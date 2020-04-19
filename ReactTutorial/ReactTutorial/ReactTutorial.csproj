@@ -67,7 +67,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Images\components-folder.PNG" />
+    <Content Include="Images\folders.PNG" />
     <Content Include="Images\reactBrowser.JPG" />
+    <Content Include="Images\welcome-import.PNG" />
+    <Content Include="Images\welcome.PNG" />
     <Content Include="Tutorial.html" />
     <Content Include="TutorialCSS.css" />
     <Content Include="Web.config" />
