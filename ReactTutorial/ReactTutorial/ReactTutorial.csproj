@@ -67,10 +67,41 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Images\category-import.PNG" />
+    <Content Include="Images\code1 - Copy.PNG" />
+    <Content Include="Images\code1.PNG" />
+    <Content Include="Images\code2 - Copy.PNG" />
+    <Content Include="Images\code2.PNG" />
+    <Content Include="Images\componentdidupdate.PNG" />
     <Content Include="Images\components-folder.PNG" />
+    <Content Include="Images\constructor-create.PNG" />
+    <Content Include="Images\constructor-welcome.PNG" />
+    <Content Include="Images\create-a-quiz.PNG" />
+    <Content Include="Images\didmount.PNG" />
+    <Content Include="Images\fade-in-import.PNG" />
+    <Content Include="Images\first-welcome - Copy.PNG" />
+    <Content Include="Images\first-welcome.PNG" />
     <Content Include="Images\folders.PNG" />
+    <Content Include="Images\food-quiz.PNG" />
+    <Content Include="Images\foodquiz.PNG" />
+    <Content Include="Images\h1.PNG" />
+    <Content Include="Images\handleChange.PNG" />
+    <Content Include="Images\import-welcoem.PNG" />
+    <Content Include="Images\importquizinfo.PNG" />
+    <Content Include="Images\load.PNG" />
+    <Content Include="Images\loadquiz.PNG" />
+    <Content Include="Images\onsubmit.PNG" />
+    <Content Include="Images\question-template.PNG" />
     <Content Include="Images\reactBrowser.JPG" />
+    <Content Include="Images\render-quiz.PNG" />
+    <Content Include="Images\render-welcome.PNG" />
+    <Content Include="Images\shuffle.PNG" />
+    <Content Include="Images\statequestions.PNG" />
+    <Content Include="Images\styled-welcome.PNG" />
+    <Content Include="Images\update.PNG" />
+    <Content Include="Images\value.PNG" />
     <Content Include="Images\welcome-import.PNG" />
+    <Content Include="Images\welcome-message.PNG" />
     <Content Include="Images\welcome.PNG" />
     <Content Include="Tutorial.html" />
     <Content Include="TutorialCSS.css" />

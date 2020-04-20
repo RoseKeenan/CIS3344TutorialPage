@@ -147,9 +147,9 @@
         <hr />
         <p>
             To use React in production, you need NPM and <a href="https://nodejs.org/en/download/">Node.js</a>
-                <strong>Npm</strong> is the package manager for the Node JavaScript platform.
-            It puts modules in place so that node can find them, and manages dependency conflicts intelligently. 
-            It is extremely configurable to support a wide variety of use cases. Most commonly, it is used to publish, discover, install, 
+            <strong>Npm</strong> is the package manager for the Node JavaScript platform.
+            It puts modules in place so that node can find them, and manages dependency conflicts intelligently.
+            It is extremely configurable to support a wide variety of use cases. Most commonly, it is used to publish, discover, install,
             and develop node programs<br /><br />
         </p>
     </div>
@@ -199,6 +199,8 @@
             Now, we are ready to build!
         </p>
 
+        <h3>JSX</h3>
+
         <p>
             First, it’s important to understand JavaScript XML, also known as JSX.
             JSX is a syntax extension to JavaScript. It helps us describe what the User Interface (UI) will look like.
@@ -208,6 +210,10 @@
                 this example
             </a>.
         </p>
+
+        <h3>
+            Our Files
+        </h3>
 
         <p>
             Now that we have some basic knowledge of JSX, let’s start building our application. You have seen what the default React Application looks like.
@@ -232,11 +238,15 @@
 
         </p>
 
+        <h3>Creating Components</h3>
+
         <p>
             Moving forward, let’s create a subfolder under the src folder. We will name this “components”. This is where we will organize our JSX files.
             <br />
             <img class="center-image" src="Images/components-folder.PNG" />
         </p>
+
+        <h3>Welcome Component</h3>
 
         <p>
             Now, let’s create a Welcome page. This is how we styled our welcome page. Feel free to style it however you want by manipulating your index.css file.
@@ -296,6 +306,8 @@
             Let's add some styling to our css. This can be totally up to you and you can use your basic HTML/CSS knowledge to do this! If you would like to see our css,
             we'll link you to our <a href="https://github.com/RoseKeenan/Quizzical/blob/master/quizzical-react-app/src/index.css"> github for this project.</a>
         </p>
+
+        <h3>Catgeory Component</h3>
 
         <p>
             Let’s work on our create a quiz button first. We want this button to load another component that will ask the user to enter a category.
@@ -373,6 +385,8 @@
             and another component will be loaded. This component will be made next.
         </p>
 
+        <h3>Take Quiz Component</h3>
+
         <p>
             Let's create our take a quiz component. This will be a page where the user can take some premade quizzes. First, let's create our quizzes. This will be a
             separate component. We will have one quiz for each category. Our app has 4 categories so we're going to have to create 4 quizzes. This is a pretty simple
@@ -400,13 +414,63 @@
 
         <img class="bigger-image" src="Images/importquizinfo.PNG" />
 
-        <h1>INSERT FOOD QUIZ INFO HERE</h1>
+        <p>
+            Food Quiz, create a state object that has six properties.
+            Set currentQuestion to zero, myAnswer to null, options is an empty array, score is zero, disabled equal to true and isEnd false.
+        </p>
+
+        <img class="bigger-image" src="Images/foodquiz.PNG" />
 
         <p>
-            Let’s create a next question property. First, start by creating a react property named nextQuestion. We set the current state object to a const with properties
+            Then create a method called loadQuizData that sets the current state of foodQuiz. Set the properties: questions,
+            answer and options equal to the foodQuiz array properties in QuizInfo.jsx.
+        </p>
+
+        <img class="bigger-image" src="Images/loadquiz.PNG" />
+
+        <p>
+            Then create the react the componentDidMount method, which gets invoked after the foodQuiz component is added to the DOM tree.
+            This method will call the loadQuizData to load the data that will be used later on.
+        </p>
+
+        <p>
+            Let’s create a next question method, We set the current state object to a const with properties
             named myAnswer, answer and score. Then we compare the currentQuestion's answer to the answer the user selected.
             If they are a match then we increment the score by 100. Lastly, we move on to the next question by adding 1 to the currentQuestion property.
         </p>
+
+        <img class="bigger-image" src="Images/didmount.PNG" />
+
+        <p>
+            Next we create a method, called componentDidUpdate, which gets called after componentDidMount.
+            Inside the method we check to see if the currentQuestion and the previous question are different.
+            If they are then we change the state of the object.
+        </p>
+
+        <p>
+            Create a method named checkAnswer to which sets the option the user clicked on equal to myAnswer property then
+            disabled becomes false which allows the user to click on the next button.
+        </p>
+
+        <p>
+            Finish method checks to see if the user has completed the quiz if they had then isEnd equals true.
+        </p>
+
+        <img class="bigger-image"src="Images/componentdidupdate.PNG" />
+
+        <p>
+            In the react render method, display the welcome message along with the quiz title.
+            Then show the first question of the quiz and the remaining number of questions in total.
+            Then create a new array with a unique key for each multiple choice by using the map function.
+            Attach an event handler to whichever option the user picks and call the checkAnswer method. Once the user selects
+            an option they will be able to click on the next button. Which will call the nextQuestion method.
+            Once the user has completed the quiz isEnd will become true and the list of answers and the user’s score will display.
+
+        </p>
+
+        <img class="bigger-image" src="Images/render-quiz.PNG" />
+
+        <h3>Create Quiz Component</h3>
 
         <p>
             Now that we have the premade quizzes finished and working, let’s go back to creating a quiz. Let’s recall where we left off.
@@ -513,16 +577,66 @@
             They should both look like this:
         </p>
 
-        <img class="bigger-image"src="Images/load.PNG" />
+        <img class="bigger-image" src="Images/load.PNG" />
         <img class="bigger-image" src="Images/update.PNG" />
 
         <p>
             This will effectively shuffle the answers and return the array. :)
         </p>
 
+        <h3>That's it!</h3>
+
+        <p>
+            You should have a working quiz app created using React and Bootstrap! If you missed any steps or didn't understand something, feel free to look at the github repo
+            for this project. You can find it here: <a href="https://github.com/RoseKeenan/Quizzical">Quizzical Github Repo</a>
+        </p>
+
     </div>
 
-    
-    <footer>Created by Maryam S. and Rose K.</footer>
+    <div id="ReactSetUp">
+        <h2>
+            Summary
+        </h2>
+        <hr />
+        <p>
+            React is a great JavaScript library to use. Not only is there extensive documentation, but it is extremely popular. Many companies are interested in programmers who
+            know this framework. React helps you easily create beautiful, interactive UI. With an understanding of React, programmers will be able to apply this
+            to many other JavaScript frameworks and libraries.
+        </p>
+
+        <p>
+            This project helps beginner programmers understand the basics of React. Not only does it give an overview of components, but it walks through how to create them
+            and pass data between them. It also gives them an opportunity to explore Bootstrap. With Bootstrap, you can easily create very eye appealing elements by assigning
+            premade classes.
+        </p>
+    </div>
+
+
+    <div id="ReactSetUp">
+        <h2>
+            References
+        </h2>
+        <hr>
+        <p> Exapnd your familiarity with React by checking out these resources:</p>
+        <ul>
+            <li>
+                <a href="https://reactjs.org/tutorial/tutorial.html">React Documentation</a>
+            </li>
+            <li>
+                <a href="https://www.codecademy.com/learn/react-101?coursePageWithSignup=true">Codecademy</a>
+            </li> 
+            <li>
+                <a href="https://www.freecodecamp.org/news/learning-react-roadmap-from-scratch-to-advanced-bff7735531b6/">Free Code Camp</a>
+            </li>
+            <li>
+                <a href="https://www.freecodecamp.org/news/the-5-things-you-need-to-know-to-understand-react-a1dbd5d114a3/">Free Code Camp 02</a>
+            </li>
+
+        </ul>
+    </div>
+
+
+
+        <footer>Created by Maryam S. and Rose K.</footer>
 </body>
 </html>
